@@ -1,0 +1,8 @@
+{
+  "name": "信太山保証",
+  "description": "信太山新地 当店直営 公式求人・保証サイト。中間マージンなし・雑費天引きゼロ・全額日払い手渡し",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
