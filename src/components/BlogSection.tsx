@@ -101,7 +101,7 @@ export default function BlogSection({ articles, selectedSlug, onSelectSlug, onCt
       if (twCard) twCard.setAttribute('content', 'summary_large_image');
     } else {
       const defaultTitle = '大阪 信太山新地 高額保証求人【公式】日給最大12万円・全額日払い';
-      const defaultDesc = '信太山新地の高額保証公式求人サイト「sinodayama vip」。未経験から日給3.5万〜最大12万円の高額永久保証完備！全額即日日払い（現金手渡し）、完全自由出勤、難波送迎あり、雑費天引き完全0円。24時間LINE応募・質問受付中。';
+      const defaultDesc = '信太山新地の高額保証公式求人サイト「sinodayama vip」。未経験から日給3.5万〜最大12万円の高額永久保証完備！全額即日日払い（現金手渡し）、完全自由出勤、難波送迎あり、雑費1日3,000円のみの明朗会計。24時間LINE応募・質問受付中。';
       document.title = defaultTitle;
 
       const metaDesc = document.querySelector('meta[name="description"]');

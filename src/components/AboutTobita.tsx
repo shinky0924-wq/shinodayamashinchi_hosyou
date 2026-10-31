@@ -69,7 +69,7 @@ export default function AboutTobita() {
     },
     {
       label: 'お給料・保証システム',
-      value: '日給35,000円〜最大120,000円の高額永久保証あり（1日ごとに即日全額現金精算 ／ 雑費天引き完全0円）'
+      value: '日給35,000円〜最大120,000円の高額永久保証あり（1日ごとに即日全額現金精算 ／ 雑費は1日3,000円のみ）'
     }
   ];
 
@@ -91,7 +91,7 @@ export default function AboutTobita() {
           </h2>
           <p className="font-sans text-xs md:text-base text-[#4f3f45] max-w-2xl mx-auto leading-relaxed">
             大阪・和泉市にある伝統ある老舗料亭街「信太山新地」。<br className="hidden sm:inline" />
-            当店は20年以上の実績を誇る地域トップクラス店として、在籍キャスト全員への【高額永久保証】、お店の奥での顔合わせによる徹底した身バレ対策、雑費天引き完全0円の即日日払いをお約束いたします。
+            当店は20年以上の実績を誇る地域トップクラス店として、在籍キャスト全員への【高額永久保証】、お店の奥での顔合わせによる徹底した身バレ対策、雑費は1日3,000円のみの明朗即日日払いをお約束いたします。
           </p>
           <div className="h-0.5 w-20 bg-gradient-to-r from-[#c5a059] via-[#ecd49f] to-[#c5a059] mx-auto rounded-full mt-4" />
         </div>
@@ -159,7 +159,7 @@ export default function AboutTobita() {
           </h4>
           <p className="font-sans text-xs md:text-sm text-[#e6d8c4] leading-relaxed max-w-2xl mx-auto">
             当店は信太山新地で20年以上、地域トップクラスの信頼を誇る老舗店です。<br className="hidden sm:inline" />
-            お客様が一年中途切れないため「稼げずイライラする」心配がありません。衣装代・光熱費などの雑費天引きは完全0円、単価15分3,800円〜60分15,200円＋永久保証で即日全額現金手渡しいたします。
+            お客様が一年中途切れないため「稼げずイライラする」心配がありません。雑費は1日3,000円のみと明確で、単価15分3,800円〜60分15,200円＋永久保証で即日全額現金手渡しいたします。
           </p>
         </div>
       </div>

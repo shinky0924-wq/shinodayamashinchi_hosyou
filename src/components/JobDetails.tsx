@@ -121,8 +121,8 @@ export default function JobDetails({ content, onCtaclickWithData }: JobDetailsPr
   const benefits = [
     {
       icon: 'BadgePercent',
-      title: '雑費・天引き一切なし（完全0円）',
-      desc: '衣装代・備品代・お菓子代などの雑費天引きは一切ありません。働いた分のお給料を100%全額お渡しします。'
+      title: '雑費は1日3,000円のみ（明朗会計）',
+      desc: '衣装代や備品代などの不透明な名目での天引きはありません。雑費は1日3,000円のみと明確で、稼いだ分のお給料を全額日払いでお渡しします。'
     },
     {
       icon: 'Coins',
@@ -176,7 +176,7 @@ export default function JobDetails({ content, onCtaclickWithData }: JobDetailsPr
           </h2>
           <p className="font-sans text-xs md:text-base text-[#4f3f45] max-w-2xl mx-auto leading-relaxed">
             当店は信太山新地の規定バック給に準拠し、15分3,800円／30分7,200円／60分15,200円。<br className="hidden sm:inline" />
-            在籍キャスト全員に【高額の永久保証】を完備し、衣装代・お菓子代などの雑費天引きは完全0円！稼いだお給料は100%全額即日日払い（現金手渡し）でお渡しします。
+            在籍キャスト全員に【高額の永久保証】を完備し、雑費は1日3,000円のみと明確！稼いだお給料は全額即日日払い（現金手渡し）でお渡しします。
           </p>
           <div className="h-0.5 w-20 bg-gradient-to-r from-[#c5a059] via-[#ecd49f] to-[#c5a059] mx-auto rounded-full mt-4" />
         </div>
@@ -499,7 +499,7 @@ export default function JobDetails({ content, onCtaclickWithData }: JobDetailsPr
                     約 {workingFormatter(monthlyEarnings)} <span className="text-sm font-sans font-bold text-[#1f181b]">円</span>
                   </span>
                   <span className="text-[10px] text-[#524348] mt-1">
-                    ※永久保証給＋接客バックが100%手元に残ります（天引き完全0円）
+                    ※永久保証給＋接客バック（雑費1日3,000円のみ）
                   </span>
                 </div>
               </div>
