@@ -150,69 +150,118 @@ export default function Hero({ content, onCtaclick, onBlogClick, articles, onArt
           <div className="absolute -bottom-4 -left-4 w-12 h-12 bg-[#2a1d22] rounded-full border border-[#c5a059]/30 flex items-center justify-center -z-10 shadow-xs" />
         </motion.div>
 
-        {/* 期間限定イベント・入店祝い金10万円キャンペーンバナー */}
+        {/* 期間限定イベント・入店祝い金10万円キャンペーン（プロフェッショナル・ハイエンドデザイン） */}
         <motion.div
-          className="w-full max-w-2xl mb-12 relative group cursor-pointer"
+          className="w-full max-w-2xl mb-12 relative cursor-pointer group"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.35, ease: 'easeOut' }}
           onClick={onCtaclick}
           id="hero-welcome-bonus-banner"
         >
-          {/* Animated glow border effect */}
-          <div className="absolute -inset-1 bg-gradient-to-r from-[#c5a059] via-[#ff6b8b] to-[#c5a059] rounded-3xl blur-md opacity-75 group-hover:opacity-100 transition duration-500 group-hover:duration-200 animate-pulse" />
-          
-          <div className="relative rounded-3xl overflow-hidden bg-gradient-to-b from-[#2a1820] via-[#201217] to-[#150a0f] border-2 border-[#f3d48e] shadow-2xl">
-            {/* Background Graphic with Gold Ribbons & Gift Boxes */}
-            <div className="relative w-full aspect-[21/9] sm:aspect-[16/7] overflow-hidden">
-              <img
-                src="/images/welcome_bonus_100k.jpg"
-                alt="今だけ！入店祝い金10万円支給キャンペーン"
-                className="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-700 brightness-95"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#1b0e14] via-[#1b0e14]/50 to-transparent" />
-              
-              {/* Event Live Badge */}
-              <div className="absolute top-3 left-3 sm:top-4 sm:left-4 bg-gradient-to-r from-[#e52d5e] to-[#ff6b8b] text-white px-3.5 py-1.5 rounded-full font-black text-xs sm:text-sm tracking-wider shadow-lg flex items-center gap-1.5 border border-white/40 animate-bounce">
-                <span className="w-2 h-2 rounded-full bg-white animate-ping" />
-                <span>特別イベント開催中！</span>
-              </div>
+          {/* Subtle Ambient Silk Glow */}
+          <div className="absolute -inset-2 bg-gradient-to-r from-[#d4af37]/25 via-[#e8b4b8]/30 to-[#d4af37]/25 rounded-[32px] blur-xl opacity-60 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none" />
 
-              {/* Deadline / Availability pill */}
-              <div className="absolute top-3 right-3 sm:top-4 sm:right-4 bg-black/60 backdrop-blur-md text-[#ffd67a] border border-[#f3d48e]/60 px-3 py-1 rounded-full text-[10px] sm:text-xs font-bold tracking-wider">
-                ✨ 今だけの特別増額支給
+          {/* Main Luxury Frame */}
+          <div className="relative rounded-[28px] overflow-hidden bg-gradient-to-b from-[#1e1418] via-[#170e12] to-[#120a0d] border border-[#d4af37]/50 shadow-[0_20px_60px_-15px_rgba(0,0,0,0.85)]">
+            {/* Top Status Bar: Elegant Minimalist Ribbon */}
+            <div className="bg-gradient-to-r from-[#2c1b22] via-[#3a222c] to-[#2c1b22] border-b border-[#d4af37]/30 px-5 sm:px-8 py-3 flex items-center justify-between">
+              <div className="flex items-center gap-2">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#f3d48e] animate-ping" />
+                <span className="text-[#f5deb3] font-serif tracking-[0.25em] text-[10px] sm:text-[11px] font-semibold uppercase">
+                  Special Welcome Event
+                </span>
               </div>
+              <span className="inline-flex items-center gap-1.5 text-[10px] sm:text-xs font-sans font-bold text-[#f3d48e] bg-[#d4af37]/15 border border-[#d4af37]/40 px-3 py-0.5 rounded-full tracking-wider">
+                ✨ 期間限定・特別増額
+              </span>
             </div>
 
-            {/* Content Body */}
-            <div className="p-5 sm:p-7 text-left relative bg-[#1b0e14]">
-              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-3">
-                <div>
-                  <p className="text-[#f3d48e] font-sans font-bold text-xs sm:text-sm tracking-widest uppercase flex items-center gap-1.5">
-                    <LucideIcon name="Gift" size={16} className="text-[#ff6b8b]" />
-                    LIMITED TIME BONUS CAMPAIGN
-                  </p>
-                  <h3 className="font-sans font-black text-2xl sm:text-3xl lg:text-4xl text-white tracking-tight mt-1 flex flex-wrap items-baseline gap-1.5">
-                    <span>入店祝い金</span>
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#ffe599] via-[#ff6b8b] to-[#ffe599] text-3xl sm:text-4xl lg:text-5xl font-black drop-shadow-[0_2px_10px_rgba(255,107,139,0.5)]">
-                      10万円
-                    </span>
-                    <span className="text-[#ffd67a] text-xl sm:text-2xl font-black">支給中！</span>
-                  </h3>
-                </div>
-
-                <div className="shrink-0">
-                  <div className="inline-flex items-center gap-1.5 bg-gradient-to-r from-[#06c755] to-[#05b34c] hover:brightness-110 text-white font-black text-xs sm:text-sm px-5 py-3 rounded-full shadow-lg border border-white/20 transition-all transform group-hover:scale-105">
-                    <LucideIcon name="MessageSquare" size={17} />
-                    <span>LINEで詳細を聞く</span>
-                  </div>
+            {/* Split Visual & Headline Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-12 items-stretch">
+              {/* Left Photo: Cinematic Fine Art Framing */}
+              <div className="md:col-span-5 relative min-h-[190px] md:min-h-full overflow-hidden">
+                <img
+                  src="/images/welcome_bonus_luxury.jpg"
+                  alt="洗練された入店祝い金10万円ギフト"
+                  className="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-1000 ease-out"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-[#170e12]/90 via-[#170e12]/30 to-transparent" />
+                
+                {/* Floating Micro Stamp */}
+                <div className="absolute bottom-3 left-3 bg-black/60 backdrop-blur-md border border-[#d4af37]/40 px-3 py-1 rounded-lg">
+                  <p className="text-[10px] text-[#f5deb3] font-serif tracking-widest uppercase">Premium Gift</p>
+                  <p className="text-xs text-white font-bold tracking-wider">在籍キャスト全員対象</p>
                 </div>
               </div>
 
-              <div className="border-t border-[#f3d48e]/25 pt-3.5 mt-2">
-                <p className="text-xs sm:text-sm text-[#f5e9d5] leading-relaxed font-medium">
-                  現在、当店では<strong className="text-[#ffd67a] font-bold">【期間限定特別イベント】</strong>を開催しており、新しくご入店いただいたキャスト様に<strong className="text-white bg-[#e52d5e] px-2 py-0.5 rounded mx-1 font-bold">入店祝い金１０万円</strong>をプレゼント中！日給最大12万円の永久保証・15分3,800円〜60分15,200円の全額日払いに加えて、さらにお得にスタートできる大チャンスです。定員に達し次第終了となりますので、ぜひお気軽にお問い合わせください♪
-                </p>
+              {/* Right Content: Editorial Layout with Precision Typographic Hierarchy */}
+              <div className="md:col-span-7 p-6 sm:p-7 flex flex-col justify-between text-left">
+                <div>
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className="h-px w-6 bg-[#d4af37]" />
+                    <span className="text-[#d4af37] font-sans font-bold text-xs tracking-widest uppercase">
+                      Present Campaign
+                    </span>
+                  </div>
+
+                  {/* Main Master Headline */}
+                  <div className="mb-4">
+                    <p className="text-[#e8d8c8] text-xs sm:text-sm font-medium tracking-wider mb-1">
+                      新しい一歩を踏み出すあなたへ贈る、最高峰の歓迎待遇
+                    </p>
+                    <div className="flex items-baseline gap-1 sm:gap-2 flex-wrap">
+                      <span className="font-serif font-bold text-xl sm:text-2xl text-white tracking-wide">
+                        入店祝い金
+                      </span>
+                      <span className="font-serif font-black text-4xl sm:text-5xl lg:text-6xl text-transparent bg-clip-text bg-gradient-to-r from-[#fff2cc] via-[#f7d794] to-[#f3a683] tracking-tight drop-shadow-[0_2px_12px_rgba(243,166,131,0.35)]">
+                        10<span className="text-2xl sm:text-3xl ml-0.5">万円</span>
+                      </span>
+                      <span className="font-serif font-bold text-base sm:text-lg text-[#f7d794]">
+                        進呈中
+                      </span>
+                    </div>
+                  </div>
+
+                  {/* Benefit Points (Editorial 3 Badges) */}
+                  <div className="grid grid-cols-3 gap-2 mb-4 pt-3 border-t border-[#d4af37]/20">
+                    <div className="bg-[#24171e]/90 border border-[#d4af37]/30 rounded-xl p-2 text-center">
+                      <span className="block text-[9px] text-[#e8b4b8] font-mono tracking-wider">POINT 01</span>
+                      <span className="text-[11px] font-bold text-white leading-tight block mt-0.5">永久保証完備</span>
+                    </div>
+                    <div className="bg-[#24171e]/90 border border-[#d4af37]/30 rounded-xl p-2 text-center">
+                      <span className="block text-[9px] text-[#e8b4b8] font-mono tracking-wider">POINT 02</span>
+                      <span className="text-[11px] font-bold text-white leading-tight block mt-0.5">全額日払い</span>
+                    </div>
+                    <div className="bg-[#24171e]/90 border border-[#d4af37]/30 rounded-xl p-2 text-center">
+                      <span className="block text-[9px] text-[#e8b4b8] font-mono tracking-wider">POINT 03</span>
+                      <span className="text-[11px] font-bold text-white leading-tight block mt-0.5">天引き完全0円</span>
+                    </div>
+                  </div>
+
+                  {/* Explanatory Body */}
+                  <p className="text-xs sm:text-[13px] text-[#d6c7b2] leading-relaxed mb-5 font-normal">
+                    当店ではただいま特別増額期間として、ご入店いただいた女性へ<strong className="text-white font-bold border-b border-[#f7d794]">「入店祝い金10万円」</strong>を支給しております。日給最大12万円の永久保証・15分〜60分の明瞭な手渡し日払いに加え、確かな安心とゆとりをお約束します。
+                  </p>
+                </div>
+
+                {/* Elegant CTA Action Button */}
+                <div className="pt-2">
+                  <div className="w-full inline-flex items-center justify-between bg-gradient-to-r from-[#24171c] via-[#2f1b24] to-[#24171c] hover:from-[#351e29] hover:to-[#351e29] border border-[#d4af37]/60 group-hover:border-[#d4af37] px-5 sm:px-6 py-3.5 rounded-2xl shadow-xl transition-all duration-300">
+                    <div className="flex items-center gap-3">
+                      <div className="w-8 h-8 rounded-full bg-[#06c755] flex items-center justify-center text-white shrink-0 shadow-sm">
+                        <LucideIcon name="MessageSquare" size={16} />
+                      </div>
+                      <div>
+                        <p className="text-[10px] text-[#f7d794] font-medium tracking-wider">完全無料・秘密厳守</p>
+                        <p className="text-xs sm:text-sm font-bold text-white tracking-wide">
+                          祝い金の受取条件や詳細を公式LINEで聞く
+                        </p>
+                      </div>
+                    </div>
+                    <LucideIcon name="ChevronRight" size={18} className="text-[#f7d794] transform group-hover:translate-x-1 transition-transform" />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
