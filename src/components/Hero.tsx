@@ -235,7 +235,7 @@ export default function Hero({ content, onCtaclick, onBlogClick, articles, onArt
                     </div>
                     <div className="bg-[#24171e]/90 border border-[#d4af37]/30 rounded-xl p-2 text-center">
                       <span className="block text-[9px] text-[#e8b4b8] font-mono tracking-wider">POINT 03</span>
-                      <span className="text-[11px] font-bold text-white leading-tight block mt-0.5">雑費1日3千円支給</span>
+                      <span className="text-[11px] font-bold text-white leading-tight block mt-0.5">雑費1日3,000円のみ</span>
                     </div>
                   </div>
 
