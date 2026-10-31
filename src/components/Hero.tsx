@@ -150,6 +150,74 @@ export default function Hero({ content, onCtaclick, onBlogClick, articles, onArt
           <div className="absolute -bottom-4 -left-4 w-12 h-12 bg-[#2a1d22] rounded-full border border-[#c5a059]/30 flex items-center justify-center -z-10 shadow-xs" />
         </motion.div>
 
+        {/* 期間限定イベント・入店祝い金10万円キャンペーンバナー */}
+        <motion.div
+          className="w-full max-w-2xl mb-12 relative group cursor-pointer"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.35, ease: 'easeOut' }}
+          onClick={onCtaclick}
+          id="hero-welcome-bonus-banner"
+        >
+          {/* Animated glow border effect */}
+          <div className="absolute -inset-1 bg-gradient-to-r from-[#c5a059] via-[#ff6b8b] to-[#c5a059] rounded-3xl blur-md opacity-75 group-hover:opacity-100 transition duration-500 group-hover:duration-200 animate-pulse" />
+          
+          <div className="relative rounded-3xl overflow-hidden bg-gradient-to-b from-[#2a1820] via-[#201217] to-[#150a0f] border-2 border-[#f3d48e] shadow-2xl">
+            {/* Background Graphic with Gold Ribbons & Gift Boxes */}
+            <div className="relative w-full aspect-[21/9] sm:aspect-[16/7] overflow-hidden">
+              <img
+                src="/images/welcome_bonus_100k.jpg"
+                alt="今だけ！入店祝い金10万円支給キャンペーン"
+                className="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-700 brightness-95"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#1b0e14] via-[#1b0e14]/50 to-transparent" />
+              
+              {/* Event Live Badge */}
+              <div className="absolute top-3 left-3 sm:top-4 sm:left-4 bg-gradient-to-r from-[#e52d5e] to-[#ff6b8b] text-white px-3.5 py-1.5 rounded-full font-black text-xs sm:text-sm tracking-wider shadow-lg flex items-center gap-1.5 border border-white/40 animate-bounce">
+                <span className="w-2 h-2 rounded-full bg-white animate-ping" />
+                <span>特別イベント開催中！</span>
+              </div>
+
+              {/* Deadline / Availability pill */}
+              <div className="absolute top-3 right-3 sm:top-4 sm:right-4 bg-black/60 backdrop-blur-md text-[#ffd67a] border border-[#f3d48e]/60 px-3 py-1 rounded-full text-[10px] sm:text-xs font-bold tracking-wider">
+                ✨ 今だけの特別増額支給
+              </div>
+            </div>
+
+            {/* Content Body */}
+            <div className="p-5 sm:p-7 text-left relative bg-[#1b0e14]">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-3">
+                <div>
+                  <p className="text-[#f3d48e] font-sans font-bold text-xs sm:text-sm tracking-widest uppercase flex items-center gap-1.5">
+                    <LucideIcon name="Gift" size={16} className="text-[#ff6b8b]" />
+                    LIMITED TIME BONUS CAMPAIGN
+                  </p>
+                  <h3 className="font-sans font-black text-2xl sm:text-3xl lg:text-4xl text-white tracking-tight mt-1 flex flex-wrap items-baseline gap-1.5">
+                    <span>入店祝い金</span>
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#ffe599] via-[#ff6b8b] to-[#ffe599] text-3xl sm:text-4xl lg:text-5xl font-black drop-shadow-[0_2px_10px_rgba(255,107,139,0.5)]">
+                      10万円
+                    </span>
+                    <span className="text-[#ffd67a] text-xl sm:text-2xl font-black">支給中！</span>
+                  </h3>
+                </div>
+
+                <div className="shrink-0">
+                  <div className="inline-flex items-center gap-1.5 bg-gradient-to-r from-[#06c755] to-[#05b34c] hover:brightness-110 text-white font-black text-xs sm:text-sm px-5 py-3 rounded-full shadow-lg border border-white/20 transition-all transform group-hover:scale-105">
+                    <LucideIcon name="MessageSquare" size={17} />
+                    <span>LINEで詳細を聞く</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="border-t border-[#f3d48e]/25 pt-3.5 mt-2">
+                <p className="text-xs sm:text-sm text-[#f5e9d5] leading-relaxed font-medium">
+                  現在、当店では<strong className="text-[#ffd67a] font-bold">【期間限定特別イベント】</strong>を開催しており、新しくご入店いただいたキャスト様に<strong className="text-white bg-[#e52d5e] px-2 py-0.5 rounded mx-1 font-bold">入店祝い金１０万円</strong>をプレゼント中！日給最大12万円の永久保証・15分3,800円〜60分15,200円の全額日払いに加えて、さらにお得にスタートできる大チャンスです。定員に達し次第終了となりますので、ぜひお気軽にお問い合わせください♪
+                </p>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+
         {/* Recommendation Columns (おすすめ5選) */}
         {recommendedArticles.length > 0 && (
           <motion.div 
