@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800;900&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Zen Kaku Gothic New", "Noto Sans JP", "Plus Jakarta Sans", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  --font-display: "Zen Kaku Gothic New", "Noto Sans JP", "Plus Jakarta Sans", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+  --font-serif: "Zen Kaku Gothic New", "Noto Sans JP", "Plus Jakarta Sans", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  --color-surface: #fbf9f6;
+  --color-surface-container: #ffffff;
+  --color-surface-container-low: #f6f1ea;
+  --color-surface-container-lowest: #ffffff;
+
+  --color-primary: #a83252;
+  --color-secondary: #a83252;
+  --color-secondary-container: #f5e7ce;
+
+  --color-gold: #c5a059;
+  --color-gold-light: #e9d19d;
+  --color-gold-dark: #99742e;
+
+  --color-on-surface: #1f181b;
+  --color-on-surface-variant: #4f3f45;
+  --color-outline-variant: #e8dccf;
+  --radius-4xl: 2rem;
+}
+
+@layer utilities {
+  .text-3\.5xl {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .gold-gradient {
+    background: linear-gradient(135deg, #c5a059 0%, #ecd49f 45%, #b88b3f 100%);
+  }
+
+  .gold-text {
+    background: linear-gradient(135deg, #a67c33 0%, #d8b467 50%, #8c6322 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .gold-border {
+    border-color: rgba(197, 160, 89, 0.35);
+  }
+
+  .gold-border-subtle {
+    border-color: rgba(197, 160, 89, 0.2);
+  }
+
+  .luxury-card {
+    background: linear-gradient(180deg, #ffffff 0%, #fcf9f5 100%);
+    border: 1px solid rgba(197, 160, 89, 0.28);
+    box-shadow: 0 4px 20px -4px rgba(44, 26, 30, 0.05), 0 1px 3px rgba(197, 160, 89, 0.1);
+  }
+
+  .luxury-card-dark {
+    background: linear-gradient(145deg, #23191d 0%, #1a1215 100%);
+    border: 1px solid rgba(212, 175, 55, 0.35);
+    box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.35);
+  }
+
+  .hero-pattern {
+    background-image: radial-gradient(rgba(197, 160, 89, 0.12) 1.2px, transparent 1.2px);
+    background-size: 28px 28px;
+  }
+
+  .scrollbar-none {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-none::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--color-surface);
+  color: var(--color-on-surface);
+  font-family: var(--font-sans);
+  letter-spacing: 0.015em;
+}
